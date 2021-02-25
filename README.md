@@ -1,11 +1,12 @@
 # Chat Alliance
 
-## What could be the alliance domain?
+## What could be the cooperation space?
 
 - unified identity 
 - common identity directory
 - common transport API
-- forward messages
+- forward messages to app with deep linking
+- message pivoting
 - compatibility of types
 - common apps
 - public conformance levels
@@ -26,12 +27,21 @@ Bidirectional connection user unique identity <-> transport identity.
 Used by projects to forward messages to other projects.
 
 
-### Forward messages
+### Forward messages to app with deep linking
 
 Projects must support ChatAlliance deep linking:
 - show users ChatAlliance apps that can be used to handle a certain message
 - support a general message description format if the project cannot handle the message format itself
 - forward the message to the app chosen by the user
+
+#### Forward messages to app plugins
+
+An app can forward a message to a specific plugin of another app.
+
+### Message pivoting
+
+Users registered with multiple transport services can act as a pivot for seding messages between users with no direct transport link.
+E.g. A uses transport T1, B uses transport T2, C is registered with both T1 and T2. C can receive a message from A on T1 and forward it to B, on T2.
 
 ### Common apps
 
@@ -105,9 +115,3 @@ These are principles that each member promises to uphold, in relation to its Cha
 
 * Element - @element_hq, https://twitter.com/mr_ligi/status/1364541931083223042
 * Bluesky - @bluesky, https://twitter.com/_franzihei/status/1364541250255400960
-
-
-
-
-
- 
