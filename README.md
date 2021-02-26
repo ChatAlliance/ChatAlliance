@@ -1,6 +1,6 @@
 # Chat Alliance
 
-## What could be the cooperation space?
+## Cooperation Space
 
 - unified identity 
 - common identity directory
@@ -38,12 +38,12 @@ Projects must support ChatAlliance deep linking:
 
 An app can forward a message to a specific plugin of another app.
 
-### Message pivoting
+### Message Pivoting
 
 Users registered with multiple transport services can act as a pivot for seding messages between users with no direct transport link.
 E.g. A uses transport T1, B uses transport T2, C is registered with both T1 and T2. C can receive a message from A on T1 and forward it to B, on T2.
 
-### Common apps
+### Common Apps
 
 Universal clients:
 - allow users to enable transports in order of preference
@@ -83,7 +83,7 @@ These are principles that each member promises to uphold, in relation to its Cha
 - member projects must support the alliance agreed upon API, in an exact manner
 
 
-### Traceable to origin
+### Traceable to Origin
 
 - a public git-like system must be used, to keep the history of changes for both protocol implementation and architecture.
 - an implemented idea must be traceable up to the initial person who proposed it, along with the discussions that molded that idea.
